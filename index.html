@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    .nav-bar {
+      top: 0;
+      height: 90px;
+      /* opcjonalnie jakaś wysokość */
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 100%;
+      position: fixed;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .jumbotron {
+      top: 90px;
+      position: relative;
+      margin-bottom: 100px;
+    }
+
+    .inline {
+      display: inline;
+      padding: 15px;
+    }
+
+    .container {
+      background-color: rgb(254, 254, 254)
+    }
+
+    img {
+      width: 100%;
+      display: inline;
+      float: right;
+      padding: 15px;
+    }
+
+    .plink {
+      display: block;
+      text-align: center;
+    }
+
+    .row {
+      padding: 25px;
+    }
+
+    a:link {
+      color: black;
+    }
+
+    a:hover {
+      color: grey;
+      text-decoration: none;
+    }
+
+    .contact li {
+      display: block;
+      padding: 15px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="row nav-bar">
+    <ul>
+      <li class="inline"><a href="#">HOME</a></li>
+      <li class="inline"><a href="#about">O MNIE</a></li>
+      <li class="inline"><a href="#projects">PROJEKTY</a></li>
+      <li class="inline"><a href="#projects">KONTAKT</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <header class="row jumbotron">
+      <h1>Porfolio</h1>
+    </header>
+    <div class="row" id="about">
+      <div class="col-md-8">
+        <p>
+          Nazywam się Klaudia Wieczorek i jestem mgr inż. biotechnologii oraz Front-end Developerem z zamiłowania. Wiedzę dotyczącą tworzenia stron internetowych zdobyłam samodzielnie, obecnie staram się ją praktykować tworząc różnego rodzaju projekty.
+          <br />
+          <br /> W projektach korzystam z:
+        </p>
+        <ul>
+          <li class="inline">HTML5</li>
+          <li class="inline">CSS3</li>
+          <li class="inline">JavaScript</li>
+          <li class="inline">jQuery</li>
+          <li class="inline">GIT</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <img src="img1.jpg" />
+      </div>
+
+    </div>
+    <div class="row" id="projects">
+      <div class="col-md-5">
+        <h3>Tribute Page</h3>
+        <p>
+          Projekt zaliczeniowy z <a href="https://www.freecodecamp.org/klaudiamagdalena" target="_blank">freeCodeCamp</a>
+        </p>
+        <ul>
+          <li class="inline">HTML5</li>
+          <li class="inline">CSS3</li>
+          <li class="inline">Bootstrap 4.0.0</li>
+        </ul>
+      </div>
+      <div class="col-md-7">
+        <img src="tribute_page.png" />
+        <a class="plink" href="https://codepen.io/klaudi23a/pen/JLbgBd" target="_blank">Zobacz projekt</a>
+        <a class="plink" href="https://codepen.io/klaudi23a/pen/JLbgBd.html" target="_blank">Zobacz kod</a>
+
+      </div>
+    </div>
+    <div class="row" id="contact">
+      <div class="col-md-7">
+        <h3>Kontakt</h3>
+        <ul class="contact">
+          <li><a href="tel:663892111" target="_blank">663 892 111</a></li>
+          <li><a href="mailto:klaudiamagdalenawieczorek@gmail.com" target="_blank">klaudiamagdalenawieczorek@gmail.com</a></li>
+          <li><a href="https://github.com/KlaudiaMagdalena" target="_blank">Mój profil na GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/klaudia-wieczorek-19a35b15a/" target="_blank">Mój profil na LinkedIn</a></li>
+          <li><a href="https://www.freecodecamp.org/klaudiamagdalena" target="_blank">Mój profil na freeCodeCamp</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
